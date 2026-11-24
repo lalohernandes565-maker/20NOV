@@ -1,0 +1,294 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #33302b;
+    font-family: Georgia, serif;
+    padding: 30px 15px;
+    color: #29241e;
+}
+
+/* HOJA DEL PERIÓDICO */
+
+.periodico {
+    max-width: 1050px;
+    margin: auto;
+    padding: 30px;
+    background: #e9ddbd;
+    border: 1px solid #a18b65;
+    box-shadow: 0 5px 20px #00000060;
+}
+
+/* ENCABEZADO */
+
+.encabezado {
+    text-align: center;
+    padding: 20px;
+    border-top: 5px double #29241e;
+    border-bottom: 5px double #29241e;
+}
+
+.edicion {
+    font-size: 12px;
+    letter-spacing: 4px;
+}
+
+.encabezado h1 {
+    font-size: 55px;
+    margin: 15px 0 5px;
+    letter-spacing: 3px;
+}
+
+.descripcion {
+    font-style: italic;
+    font-size: 17px;
+}
+
+.linea {
+    height: 2px;
+    background: #29241e;
+    margin: 18px 0;
+}
+
+.encabezado h2 {
+    font-size: 30px;
+    color: #842c23;
+    margin-bottom: 8px;
+}
+
+.encabezado h3 {
+    font-size: 21px;
+    letter-spacing: 2px;
+}
+
+/* NOTICIA PRINCIPAL */
+
+.noticia-principal {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+    margin: 30px 0;
+    align-items: center;
+}
+
+.etiqueta {
+    background: #842c23;
+    color: white;
+    padding: 6px 12px;
+    font-size: 11px;
+    letter-spacing: 2px;
+}
+
+.texto-principal h2 {
+    font-size: 31px;
+    margin: 20px 0;
+    line-height: 1.2;
+}
+
+.texto-principal p {
+    font-size: 16px;
+    line-height: 1.8;
+    text-align: justify;
+}
+
+.imagen-principal img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    filter: sepia(45%);
+    border: 5px solid #c2b18d;
+}
+
+.imagen-principal p {
+    text-align: center;
+    font-style: italic;
+    font-size: 13px;
+    margin-top: 7px;
+}
+
+/* SEPARADORES */
+
+.separador {
+    background: #842c23;
+    color: #fff5df;
+    padding: 13px;
+    text-align: center;
+    font-size: 19px;
+    letter-spacing: 2px;
+    margin: 30px 0 20px;
+}
+
+/* GALERÍA DE PERSONAJES */
+
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+}
+
+.personaje {
+    text-align: center;
+    padding: 12px;
+    border: 1px solid #a18b65;
+    background: #f0e6ce;
+}
+
+.personaje img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    filter: sepia(55%);
+    border: 3px solid #b8a27c;
+}
+
+.personaje h3 {
+    font-size: 17px;
+    color: #842c23;
+    margin: 12px 0;
+}
+
+.personaje p {
+    font-size: 13px;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+/* COLUMNAS INFORMATIVAS */
+
+.columnas {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 3px double #29241e;
+}
+
+.columna {
+    padding: 10px;
+    border-right: 1px solid #a18b65;
+}
+
+.columna:last-child {
+    border-right: none;
+}
+
+.columna h2 {
+    color: #842c23;
+    font-size: 20px;
+    margin-bottom: 12px;
+}
+
+.columna p {
+    font-size: 14px;
+    line-height: 1.7;
+    text-align: justify;
+}
+
+/* FRASE */
+
+.frase {
+    background: #29241e;
+    color: #f0e6ce;
+    text-align: center;
+    padding: 25px 15px;
+    margin-top: 30px;
+}
+
+.frase p {
+    font-size: 29px;
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+.frase span {
+    font-size: 13px;
+}
+
+/* DATO CURIOSO */
+
+.sabias {
+    margin-top: 25px;
+    padding: 20px;
+    border: 2px dashed #842c23;
+    text-align: center;
+}
+
+.sabias h2 {
+    color: #842c23;
+    font-size: 23px;
+    margin-bottom: 12px;
+}
+
+.sabias p {
+    line-height: 1.7;
+    font-size: 15px;
+}
+
+/* PIE DE PÁGINA */
+
+footer {
+    margin-top: 30px;
+    padding: 25px 10px;
+    text-align: center;
+    background: #842c23;
+    color: #fff5df;
+}
+
+footer h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+footer p {
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+.creditos {
+    font-style: italic;
+    margin-top: 8px;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 700px) {
+
+    .periodico {
+        padding: 15px;
+    }
+
+    .encabezado h1 {
+        font-size: 34px;
+    }
+
+    .noticia-principal {
+        grid-template-columns: 1fr;
+    }
+
+    .galeria {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .columnas {
+        grid-template-columns: 1fr;
+    }
+
+    .columna {
+        border-right: none;
+        border-bottom: 1px solid #a18b65;
+    }
+
+    .frase p {
+        font-size: 23px;
+    }
+}
+
+@media (max-width: 400px) {
+    .galeria {
+        grid-template-columns: 1fr;
+    }
+}
